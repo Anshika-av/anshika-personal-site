@@ -6,7 +6,7 @@
 
     body {
       font-family: "Poppins", sans-serif;
-      color: #f5f5f5;
+      color: white;
       background: 
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
         url("https://i.pinimg.com/736x/cf/c5/83/cfc583680ee593d4d618d6a647e5241d.jpg")
@@ -20,7 +20,6 @@
       top: 0;
       width: 100%;
       background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(10px);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -77,12 +76,10 @@
       border-radius: 15px;
       padding: 50px;
       margin: 30px 0;
-      backdrop-filter: blur(10px);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow 0.3s ease;
     }
 
     .about:hover, .projects:hover, .contact:hover {
-      transform: translateY(-10px);
       box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
     }
 
@@ -97,8 +94,7 @@
       padding: 25px;
       border-radius: 12px;
       margin: 15px;
-      transition: transform 0.3s;
-    }
+      
 
     .projects .card:hover {
       transform: scale(1.05);
